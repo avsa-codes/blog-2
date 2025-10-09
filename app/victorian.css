@@ -1,0 +1,125 @@
+/* Victorian theme tokens: 5 colors total (burgundy primary, gold accent, parchment bg, charcoal fg, navy secondary) */
+
+/* Typography: use Lora for body, Playfair for headings */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    letter-spacing: 0.2px;
+  }
+  p,
+  li,
+  small,
+  blockquote,
+  input,
+  textarea,
+  button {
+    font-family: var(--font-lora), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.6;
+  }
+}
+
+/* Palette */
+:root {
+  /* 5-color set */
+  --parchment: #f8f5ee; /* background neutral */
+  --charcoal: #2b2b2b; /* foreground neutral */
+  --burgundy: #6b2231; /* primary */
+  --gold: #b88a2a; /* accent */
+  --navy: #13233a; /* secondary */
+
+  /* Map to design tokens */
+  --background: var(--parchment);
+  --foreground: var(--charcoal);
+
+  --card: var(--parchment);
+  --card-foreground: var(--charcoal);
+
+  --popover: var(--parchment);
+  --popover-foreground: var(--charcoal);
+
+  --primary: var(--burgundy);
+  --primary-foreground: #fffaf0; /* ivory text on burgundy */
+
+  --secondary: var(--navy);
+  --secondary-foreground: #f4efe4; /* ivory-ish */
+
+  --muted: #ece6d7; /* subtle parchment shadow within neutral band */
+  --muted-foreground: #4b4b4b;
+
+  --accent: var(--gold);
+  --accent-foreground: var(--charcoal);
+
+  --destructive: #7b1f1f;
+  --destructive-foreground: #fff5f5;
+
+  --border: #e3dccb;
+  --input: #e3dccb;
+  --ring: #c9b68e;
+
+  /* Keep existing chart/sidebar tokens mapped to our palette */
+  --chart-1: var(--burgundy);
+  --chart-2: var(--gold);
+  --chart-3: var(--navy);
+  --chart-4: #9f7a1f; /* deeper gold tone within same family */
+  --chart-5: #3a4f6b; /* muted navy variant */
+
+  --radius: 0.625rem;
+  --sidebar: var(--parchment);
+  --sidebar-foreground: var(--charcoal);
+  --sidebar-primary: var(--burgundy);
+  --sidebar-primary-foreground: #fffaf0;
+  --sidebar-accent: #efe6cd;
+  --sidebar-accent-foreground: var(--charcoal);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+/* Optional dark mode that respects the same 5-color family */
+.dark {
+  --background: var(--navy);
+  --foreground: #f4efe4;
+
+  --card: #0f1e32;
+  --card-foreground: #f4efe4;
+
+  --popover: #0f1e32;
+  --popover-foreground: #f4efe4;
+
+  --primary: #873043; /* lighter burgundy for contrast on dark */
+  --primary-foreground: #fffaf0;
+
+  --secondary: #0c1828;
+  --secondary-foreground: #f4efe4;
+
+  --muted: #1a2a41;
+  --muted-foreground: #cdd3dd;
+
+  --accent: #c39a3a; /* brighter gold on dark */
+  --accent-foreground: #0c0c0c;
+
+  --destructive: #a63a3a;
+  --destructive-foreground: #fff5f5;
+
+  --border: #26364f;
+  --input: #26364f;
+  --ring: #c39a3a;
+}
+
+/* Decorative utilities */
+.victorian-border {
+  border-width: 1px;
+  border-color: var(--border);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+.victorian-frame {
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 6px rgba(184, 138, 42, 0.15), inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius);
+}
+.victorian-ornament {
+  background-image: radial-gradient(ellipse at top, rgba(184, 138, 42, 0.08), transparent 40%),
+    radial-gradient(ellipse at bottom, rgba(19, 35, 58, 0.05), transparent 40%);
+}
