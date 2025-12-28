@@ -21,8 +21,7 @@ export function Hero() {
             Where Literature Meets Fashion
           </h1>
           <p className="mt-4 text-pretty text-base md:text-lg text-muted-foreground">
-            A modern editorial portfolio infused with Victorian romance—essays, culture, couture, and the craft of
-            storytelling.
+            Hi Apricity ! I am guessing you are still in bed, you lazy. So I added the one article that you sent me and As soon as I get time I will make this website even more pretty , just like you. Promise. Pakka-Pakka  
           </p>
         </div>
       </div>

@@ -22,9 +22,9 @@ export function SiteHeader() {
             className={cn("inline-flex h-9 w-9 items-center justify-center rounded-full victorian-frame bg-background")}
             title="Monogram"
           >
-            <span className="text-primary font-bold">V</span>
+            <span className="text-primary font-bold">S</span>
           </span>
-          <span className="text-lg font-semibold tracking-wide text-foreground">Victoria Ainsworth</span>
+          <span className="text-lg font-semibold tracking-wide text-foreground">Spilled Espresso</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
